@@ -1,21 +1,21 @@
 <%#<form action="/users" method="post" accept-charset="UTF-8">%>
-<%= form_tag("/users", method: "post") do %>
+<%= form_with model: User.new do | f | %>
   <div>
-    <%= label_tag(:user_username, "Username:") %>
-    <%= text_field(:user, :username, placeholder: "username") %>
+    <%= f.label :username%>
+    <%= f.text_field :username, placeholder: "username" %>
   </div>
 
   <div>
-    <%= label_tag(:user_email, "Email:") %>
-    <%= email_field(:user, :email, placeholder: "example@example.com") %>
+    <%= f.label :email%>
+    <%= f.email_field :email, placeholder: "example@example.com" %>
   </div>
 
   <div>
-    <%= label_tag(:user_password, "Password:")%>
-    <%= password_field(:user, :password)%>
+    <%= f.label :password%>
+    <%= f.password_field :password%>
   </div>
 
   <div>
-    <%= submit_tag("Submit")%>
+    <%= f.submit%>
   </div>
 <% end %>
