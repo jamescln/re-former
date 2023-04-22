@@ -21,3 +21,10 @@ params to `User.new(allowed_user_params)` inside the create method.
 
 The second step involves replacing the HTML tags with rails form tags. This should help me learn about  
 how to deal with legacy codebases should I come across them.
+
+### 22/04/23
+
+I found that initially convertin the HTML form proved to be not so beneficial, however after finishing  
+the document I can see that using more Ruby-like syntax can provide a more elegant solution to interacting  
+with models in the backend. Having said that, the form_tag workflow is not massively more efficient than  
+using HTML forms overall, given how similar the structures are for both workflows.
