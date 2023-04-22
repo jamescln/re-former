@@ -28,3 +28,9 @@ I found that initially convertin the HTML form proved to be not so beneficial, h
 the document I can see that using more Ruby-like syntax can provide a more elegant solution to interacting  
 with models in the backend. Having said that, the form_tag workflow is not massively more efficient than  
 using HTML forms overall, given how similar the structures are for both workflows.
+
+## Third Step
+
+The third step is replacing the form_tag workflow with `form_with model`. This method saves a lot of time  
+by building on existing work already done when generating the model. The use of Ruby do loop syntax  
+prevents needing to write unnecessary boilerplate code and also makes the form code easier to read.
