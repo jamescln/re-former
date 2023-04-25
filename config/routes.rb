@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, only: [:new, :create]
+  root "users#new"
+  resources :users
 
-  # Defines the root path route ("/")
-  # root "articles#index"
 end
